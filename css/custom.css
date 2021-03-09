@@ -1,0 +1,122 @@
+/* navigation container STARTS */
+
+* {
+  margin: 0;
+}
+body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+.nav-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: rgb(187, 240, 208);
+
+}
+
+.nav-container div {
+  flex-direction: row;
+  margin: 20px;
+  border: solid 1px;
+}
+
+.logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-img {
+  height: 45px;
+}
+
+.fa-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* category container ENDS */
+.category-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  margin-top: 10vh;
+  background-color: rgb(231, 188, 204);
+  overflow-x: auto;
+  align-items: center;
+}
+
+.category-container div {
+  flex-direction: row;
+  margin: 17px 10px 10px 10px;
+  border: solid 1px;
+}
+
+.category-container::-webkit-scrollbar {
+  width: 0;
+}
+/* category container ENDS */
+
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(224, 199, 242);
+  height: 900px;
+}
+
+.card-container div {
+  border: solid 1px;
+
+}
+
+.image {
+  height: 400px;
+  margin: 20px 20px 0 20px;
+}
+
+.text {
+  height: 100px;
+  margin: 0 20px 20px 20px;
+}
+
+
+/* icon container STARTS */
+
+.icon-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: rgb(226, 240, 187);
+}
+
+.icon-container div {
+  flex-direction: row;
+  margin: 20px;
+  border: solid 1px;
+  flex-grow: 1;
+  text-align: center;
+}
+/* icon container ENDS */
+
+
+/* Media Query*/
+@media only screen and (min-width: 1200px) {
+
+
+  .nav-container{
+    background-color: blue;
+  }
+
+  .card-container {
+    margin: 0 500px;
+  }
+
+}
+/* Media Query To Order */

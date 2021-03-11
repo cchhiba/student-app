@@ -13,10 +13,12 @@ body {
 .nav-container {
   position: fixed;
   display: flex;
+  top: 0;
   width: 100%;
+  z-index: 999;
   background-color: rgb(187, 240, 208);
-
 }
+
 
 .nav-container div {
   flex-direction: row;
@@ -26,27 +28,49 @@ body {
 
 .logo {
   flex-grow: 1;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 #logo-img {
   height: 45px;
 }
 
-.fa-search {
+/* .fa-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.search-bar {
+  width: 50px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border: none;
+  background-color: rgb(187, 240, 208);
+}
+.search-bar:focus {
+  width: 100%;
+}
+
+
 /* category container ENDS */
+
 .category-container {
   position: fixed;
   display: flex;
+  z-index: 999;
+  /* top: 0; */
+  height: 69px;
   width: 100%;
-  margin-top: 10vh;
+  margin-top: -145px;
   background-color: rgb(231, 188, 204);
   overflow-x: auto;
   align-items: center;
@@ -56,6 +80,14 @@ body {
   flex-direction: row;
   margin: 17px 10px 10px 10px;
   border: solid 1px;
+  padding: 10px;
+  background: rgba( 255, 255, 255, 0.25 );
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 
 .category-container::-webkit-scrollbar {
@@ -63,46 +95,102 @@ body {
 }
 /* category container ENDS */
 
-
+/* card container STARTS */
 .card-container {
+  margin-top: 234px;
   display: flex;
   flex-direction: column;
   background-color: rgb(224, 199, 242);
-  height: 900px;
-}
-
-.card-container div {
-  border: solid 1px;
+  /* height: 900px; */
 
 }
+
 
 .image {
-  height: 400px;
-  margin: 20px 20px 0 20px;
+  position: relative;
+  height: 300px;
+  margin: 20px 40px 0 40px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  /* backdrop-filter: blur( 1.5px ); */
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 4px 4px 0 4px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+.promo-img {
+  height: 300px;
+  width: 293px;
+}
+
+/* .text-container {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  margin: 0 40px 40px 40px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  /* backdrop-filter: blur( 4px ); */
+  /* border-radius: 0 4px 4px 4px;
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
 
 .text {
-  height: 100px;
-  margin: 0 20px 20px 20px;
+  /* display: flex;
+  flex-direction: row; */
+  position: absolute;
+  height: 50px;
+  width: 293px;
+  bottom: 0;
+  /* margin: 0 40px 40px 40px; */
+  /* background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  /* backdrop-filter: blur( 4px ); */
+  /* border-radius: 0 4px 4px 4px;
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
 
+.promo-text {
+  /* display: flex;
+  flex-grow: 1; */
+}
+
+.heart-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+.fa-heart-o {
+  color: white;
+  font-size: 2rem;
+}
+/* card container ENDS */
 
 /* icon container STARTS */
 
 .icon-container {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
+  position: fixed;
+  height: 69px;
+  bottom: 0;
   width: 100%;
   background-color: rgb(226, 240, 187);
 }
 
 .icon-container div {
   flex-direction: row;
-  margin: 20px;
+  margin: 15px;
   border: solid 1px;
   flex-grow: 1;
   text-align: center;
+  font-size: 2rem;
+  color: black;
 }
+
 /* icon container ENDS */
 
 

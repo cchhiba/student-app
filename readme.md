@@ -10,7 +10,7 @@ In this repository you will find three main folders:
 2.  fonts
 3.  img
 
-##G etting started :rocket:
+## Getting started :rocket:
 
 To begin, please download the full repository.
 
@@ -34,4 +34,4 @@ Font awesome, CSS, Google Fonts
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-Enjoy :sparkles:
+Enjoy
